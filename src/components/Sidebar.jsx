@@ -46,28 +46,49 @@ export default function Sidebar() {
                 </div>
            
                 <div className='flex-1'>
-                    <ul className='flex flex-col gap-2'>
-                        <li className='flex items-center gap-2 p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
-                            <GrPersonalComputer />
-                            <span>Dashboard</span>
-                        </li>
-                        <li className='flex items-center gap-2 p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
-                            <FiUsers />
-                            <span>Users</span>
-                        </li>
-                        <li className='flex items-center gap-2 p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
-                            <FiPackage />
-                            <span>Products</span>
-                        </li>
-                        <li className='flex items-center gap-2 p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
-                            <CgMenuRightAlt />
-                            <span>Assignments</span>
-                        </li>
-                        <li className='flex items-center gap-2 p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
-                            <SlLayers />
-                            <span>Categories</span>
-                        </li>
-                    </ul>
+                <ul className='flex flex-col gap-2'>
+  
+  <li className='flex items-center justify-between p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
+    <div className='flex items-center gap-2'>
+      <GrPersonalComputer />
+      <span>Dashboard</span>
+    </div>
+  </li>
+
+  
+  <li className='flex items-center justify-between p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
+    <div className='flex items-center gap-2'>
+      <FiUsers />
+      <span>Users</span>
+    </div>
+    <span className='bg-white text-gray-800 rounded-full text-xs px-2 py-0.5 font-semibold'>116</span>
+  </li>
+
+  
+  <li className='flex items-center justify-between p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
+    <div className='flex items-center gap-2'>
+      <FiPackage />
+      <span>Products</span>
+    </div>
+    <span className='bg-white text-gray-800 rounded-full text-xs px-2 py-0.5 font-semibold'>100</span>
+  </li>
+
+  
+  <li className='flex items-center justify-between p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
+    <div className='flex items-center gap-2'>
+      <CgMenuRightAlt />
+      <span>Assignments</span>
+    </div>
+    <span className='bg-purple-600 text-white rounded-full text-xs px-2 py-0.5 font-semibold'>10</span>
+  </li>
+
+  
+  <li className='flex items-center gap-2 p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
+    <SlLayers />
+    <span>Categories</span>
+  </li>
+</ul>
+
                 </div>
             </div>
         </>
