@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useUser } from "../context/UserContext";
+import {FiUsers} from 'react-icons/fi' 
 
 export default function Table() {
   const { users } = useUser();
@@ -17,7 +18,7 @@ export default function Table() {
   };
 
   return (
-    <div className="p-3 md:p-4 bg-white dark:bg-gray-800 shadow-md rounded-lg border dark:border-gray-700 transition-colors duration-300">
+    <div className="p-3 md:p-4 bg-white dark:bg-gray-800 shadow-md rounded-lg dark:border-gray-700 transition-colors duration-300">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-3">
         <h1 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">Users</h1>
         <button className="px-3 py-2 md:px-4 bg-primary-600 dark:bg-primary-700 text-white rounded hover:bg-primary-700 dark:hover:bg-primary-800 transition-colors text-sm">
@@ -51,6 +52,9 @@ export default function Table() {
             {UserDatas.map((user) => (
               <tr key={user.id} className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                 <td className="px-4 lg:px-6 py-4">
+                  <div className="">
+                    <FiUsers />
+                  </div>
                   <div className="flex flex-col">
                     <div className="text-sm font-medium text-gray-900 dark:text-white">
                       {user.name}
@@ -143,6 +147,7 @@ export default function Table() {
           </div>
         ))}
       </div>
+      
     </div>
   );
 }

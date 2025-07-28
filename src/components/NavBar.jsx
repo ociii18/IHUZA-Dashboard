@@ -1,5 +1,5 @@
 import React from 'react'
-import { FiSettings, FiLogOut, FiBell, FiMoon, FiUser, FiSun } from 'react-icons/fi'
+import { FiSettings, FiBell, FiMoon, FiUser, FiSun } from 'react-icons/fi'
 import { useTheme } from '../hooks/useTheme'
 
 export default function NavBar() {
@@ -33,8 +33,8 @@ export default function NavBar() {
         
         <button className='p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors relative'>
           <FiBell size={18} className='text-gray-600 dark:text-gray-300' />
-          <span className='absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center text-[10px]'>
-            3
+          <span className='absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-3 h- flex items-center justify-center text-[10px]'>
+            .
           </span>
         </button>
         

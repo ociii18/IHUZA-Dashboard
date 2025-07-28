@@ -17,7 +17,7 @@ export default function Sidebar() {
         <>
             <button 
                 onClick={toggleSidebar} 
-                className='lg:hidden fixed top-4 left-4 z-50 p-2 bg-primary-800 text-white rounded-md'
+                className='lg:hidden fixed top-4 left-4 z-50 p-2 bg-primary-700 text-white rounded-md hover:bg-primary-600 transition-colors duration-300'
             >
                 {isSidebarOpen ? <FiX size={20}/> : <FiMenu size={20} />}
             </button>
@@ -36,61 +36,61 @@ export default function Sidebar() {
                 bg-secondary-400 dark:bg-gray-800 text-white
             `}>
                 <div className='flex items-center gap-2 mb-8'>
-                    <div className='flex items-center justify-center w-12 h-12 bg-primary-600 text-white rounded'>
+                    <div className='flex items-center justify-center w-12 h-12 bg-primary-600 text-secondary-400 rounded'>
                         <FiPackage className='text-2xl' />
                     </div>
                     <div className='flex flex-col'>
-                        <h1 className='text-2xl font-bold text-white dark:text-white'>iHUZA</h1>
-                        <p className='text-sm text-gray-200 dark:text-gray-300'>INVENTORY</p>
+                        <h1 className='text-2xl font-bold text-gray-800 dark:text-secondary-400'>iHUZA</h1>
+                        <p className='text-sm text-gray-800 dark:text-gray-300'>INVENTORY</p>
                     </div>
                 </div>
            
                 <div className='flex-1'>
                 <ul className='flex flex-col gap-2'>
   
-  <li className='flex items-center justify-between p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
-    <div className='flex items-center gap-2'>
+              <li className='flex items-center justify-between p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-secondary-400 cursor-pointer text-gray-800 dark:text-gray-200'>
+              <div className='flex items-center gap-2'>
       <GrPersonalComputer />
       <span>Dashboard</span>
-    </div>
-  </li>
+              </div>
+              </li>
 
   
-  <li className='flex items-center justify-between p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
-    <div className='flex items-center gap-2'>
-      <FiUsers />
-      <span>Users</span>
-    </div>
-    <span className='bg-white text-gray-800 rounded-full text-xs px-2 py-0.5 font-semibold'>116</span>
-  </li>
+             <li className='flex items-center justify-between p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-secondary-400 cursor-pointer text-gray-800 dark:text-gray-200'>
+         <div className='flex items-center gap-2'>
+         <FiUsers />
+         <span>Users</span>
+         </div>
+          <span className='bg-gray-200 text-black rounded-full text-xs px-2 py-0.5 font-semibold'>116</span>
+          </li>
 
   
-  <li className='flex items-center justify-between p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
-    <div className='flex items-center gap-2'>
-      <FiPackage />
-      <span>Products</span>
-    </div>
-    <span className='bg-white text-gray-800 rounded-full text-xs px-2 py-0.5 font-semibold'>100</span>
-  </li>
+             <li className='flex items-center justify-between p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-secondary-400 cursor-pointer text-gray-800 dark:text-gray-200'>
+             <div className='flex items-center gap-2'>
+               <FiPackage />
+             <span>Products</span>
+             </div>
+             <span className='bg-gray-200 text-black rounded-full text-xs px-2 py-0.5 font-semibold'>100</span>
+             </li>
 
   
-  <li className='flex items-center justify-between p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
-    <div className='flex items-center gap-2'>
-      <CgMenuRightAlt />
-      <span>Assignments</span>
-    </div>
-    <span className='bg-purple-600 text-white rounded-full text-xs px-2 py-0.5 font-semibold'>10</span>
-  </li>
+             <li className='flex items-center justify-between p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-secondary-400 cursor-pointer text-gray-800 dark:text-gray-200'>
+             <div className='flex items-center gap-2'>
+             <CgMenuRightAlt />
+             <span>Assignments</span>
+             </div>
+             <span className='bg-gray-200 text-black rounded-full text-xs px-2 py-0.5 font-semibold'>10</span>
+             </li>
 
   
-  <li className='flex items-center gap-2 p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white cursor-pointer text-white dark:text-gray-200'>
-    <SlLayers />
-    <span>Categories</span>
-  </li>
-</ul>
+             <li className='flex items-center gap-2 p-2 rounded-md hover:bg-primary-50 hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-secondary-400 cursor-pointer text- dark:text-gray-200'>
+                <SlLayers />
+                <span>Categories</span>
+             </li>
+             </ul>
 
-                </div>
-            </div>
-        </>
+           </div>
+    </div>
+  </>
     )
 }
