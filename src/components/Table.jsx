@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useUser } from "../context/UserContext";
-import {FiUsers} from 'react-icons/fi' 
+import {FiUser} from 'react-icons/fi' 
 
 export default function Table() {
   const { users } = useUser();
@@ -26,7 +26,7 @@ export default function Table() {
         </button>
       </div>
 
-      {/* Desktop Table View */}
+      
       <div className="hidden md:block overflow-x-auto">
         <table className="min-w-full bg-white dark:bg-gray-800">
           <thead>
@@ -51,9 +51,9 @@ export default function Table() {
           <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
             {UserDatas.map((user) => (
               <tr key={user.id} className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                <td className="px-4 lg:px-6 py-4">
-                  <div className="">
-                    <FiUsers />
+                <td className="px-2 lg:px-6 py-4 flex  rounded-2xl  gap-3">
+                  <div className="w-6 h-6 items-center justify-center bg-gray-300 rounded-2xl  text-secondary-50 dark:text-gray-500 size-4 p-1">
+                    <FiUser className="size-4" />
                   </div>
                   <div className="flex flex-col">
                     <div className="text-sm font-medium text-gray-900 dark:text-white">
